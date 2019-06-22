@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce59dc8c.chunk.css",
-    "main.js": "/static/js/main.054d84df.chunk.js",
-    "main.js.map": "/static/js/main.054d84df.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.0624914a.chunk.css": "/static/css/2.0624914a.chunk.css",
-    "static/js/2.c396faf0.chunk.js": "/static/js/2.c396faf0.chunk.js",
-    "static/js/2.c396faf0.chunk.js.map": "/static/js/2.c396faf0.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.16ae46bbc6ab465c1c8cb7af0092660b.js": "/precache-manifest.16ae46bbc6ab465c1c8cb7af0092660b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.0624914a.chunk.css.map": "/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.ce59dc8c.chunk.css.map": "/static/css/main.ce59dc8c.chunk.css.map",
-    "static/media/pokeball.png": "/static/media/pokeball.64b7ec9d.png"
+    "main.css": "./static/css/main.ce59dc8c.chunk.css",
+    "main.js": "./static/js/main.3efb24e8.chunk.js",
+    "main.js.map": "./static/js/main.3efb24e8.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+    "static/css/2.0624914a.chunk.css": "./static/css/2.0624914a.chunk.css",
+    "static/js/2.c396faf0.chunk.js": "./static/js/2.c396faf0.chunk.js",
+    "static/js/2.c396faf0.chunk.js.map": "./static/js/2.c396faf0.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.76e00be29cd9e1f1318c08a22bbe7517.js": "./precache-manifest.76e00be29cd9e1f1318c08a22bbe7517.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "./static/css/2.0624914a.chunk.css.map",
+    "static/css/main.ce59dc8c.chunk.css.map": "./static/css/main.ce59dc8c.chunk.css.map",
+    "static/media/pokeball.png": "./static/media/pokeball.64b7ec9d.png"
   }
 }
