@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.af74f5b2.chunk.css",
-    "main.js": "/static/js/main.eb63d6bb.chunk.js",
-    "main.js.map": "/static/js/main.eb63d6bb.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.034d15aa.js",
-    "runtime-main.js.map": "/static/js/runtime-main.034d15aa.js.map",
-    "static/css/2.5dbdccff.chunk.css": "/static/css/2.5dbdccff.chunk.css",
-    "static/js/2.b909261d.chunk.js": "/static/js/2.b909261d.chunk.js",
-    "static/js/2.b909261d.chunk.js.map": "/static/js/2.b909261d.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.50a10747522da97fd571332e24a6bb2d.js": "/precache-manifest.50a10747522da97fd571332e24a6bb2d.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.5dbdccff.chunk.css.map": "/static/css/2.5dbdccff.chunk.css.map",
-    "static/css/main.af74f5b2.chunk.css.map": "/static/css/main.af74f5b2.chunk.css.map",
-    "static/js/2.b909261d.chunk.js.LICENSE.txt": "/static/js/2.b909261d.chunk.js.LICENSE.txt",
-    "static/media/pokeball.png": "/static/media/pokeball.64b7ec9d.png"
+    "main.css": "./static/css/main.af74f5b2.chunk.css",
+    "main.js": "./static/js/main.4f5edd5d.chunk.js",
+    "main.js.map": "./static/js/main.4f5edd5d.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.d4575370.js",
+    "runtime-main.js.map": "./static/js/runtime-main.d4575370.js.map",
+    "static/css/2.5dbdccff.chunk.css": "./static/css/2.5dbdccff.chunk.css",
+    "static/js/2.cce47105.chunk.js": "./static/js/2.cce47105.chunk.js",
+    "static/js/2.cce47105.chunk.js.map": "./static/js/2.cce47105.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.373bfbb0c5794e5f18e3ff57b0768c82.js": "./precache-manifest.373bfbb0c5794e5f18e3ff57b0768c82.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.5dbdccff.chunk.css.map": "./static/css/2.5dbdccff.chunk.css.map",
+    "static/css/main.af74f5b2.chunk.css.map": "./static/css/main.af74f5b2.chunk.css.map",
+    "static/js/2.cce47105.chunk.js.LICENSE.txt": "./static/js/2.cce47105.chunk.js.LICENSE.txt",
+    "static/media/pokeball.png": "./static/media/pokeball.64b7ec9d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.034d15aa.js",
+    "static/js/runtime-main.d4575370.js",
     "static/css/2.5dbdccff.chunk.css",
-    "static/js/2.b909261d.chunk.js",
+    "static/js/2.cce47105.chunk.js",
     "static/css/main.af74f5b2.chunk.css",
-    "static/js/main.eb63d6bb.chunk.js"
+    "static/js/main.4f5edd5d.chunk.js"
   ]
 }
