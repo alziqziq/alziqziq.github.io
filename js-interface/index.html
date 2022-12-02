@@ -14,6 +14,8 @@
     function getToken() {
       var newToken = window?.EclipseWebviewInterface?.getToken();
 
+      console.log('ALAL === ', { newToken, EclipseWebviewInterface: typeof window?.EclipseWebviewInterface });
+
       document.getElementById('token').innerHTML = `Token : ${newToken}`;
     } 
   </script>
