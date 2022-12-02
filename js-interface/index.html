@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Interface</title>
+</head>
+<body>
+  <h1 id="token">Token : </h1>
+  <Button onclick="getToken()">GET TOKEN</Button>
+
+  <script>
+    function getToken() {
+      var newToken = window?.EclipseWebviewInterface?.getToken();
+
+      document.getElementById('token').innerHTML = `Token : ${newToken}`;
+    } 
+  </script>
+</body>
+</html>
