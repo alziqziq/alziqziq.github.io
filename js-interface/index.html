@@ -7,16 +7,34 @@
   <title>JS Interface</title>
 </head>
 <body>
-  <h1 id="token">Token : </h1>
-  <Button onclick="getToken()">GET TOKEN</Button>
+  <h1>Loading</h1>
+  <Button onclick="showLoading()">Show Loading</Button>
 
   <script>
-    function getToken() {
-      var newToken = window?.EclipseWebviewInterface?.getToken();
+    var ANDROID = "ANDROID";
+    var IOS = "IOS";
+    var deviceType = "";
 
-      console.log('ALAL === ', { newToken, EclipseWebviewInterface: typeof window?.EclipseWebviewInterface });
+    if (typeof window?.EclipseWebviewInterface !== "undefined") {
+      deviceType = ANDROID;
+    } else if (typeof window?.webkit?.messageHandlers !== "undefined") {
+      deviceType = IOS;
+    }
 
-      document.getElementById('token').innerHTML = `Token : ${newToken}`;
+    function showLoading() {
+      if (deviceType === ANDROID) {
+        window?.EclipseWebviewInterface.showLoading(true);
+      } else if (deviceType === IOS) {
+        window?.webkit?.messageHandlers?.showLoading.postMessage(true);
+      }
+
+      setTimeout(() => {
+        if (deviceType === ANDROID) {
+          window?.EclipseWebviewInterface.showLoading(false);
+        } else if (deviceType === IOS) {
+          window?.webkit?.messageHandlers?.showLoading.postMessage(false);
+        }
+      }, 1000)
     } 
   </script>
 </body>
