@@ -7,8 +7,15 @@
   <title>JS Interface</title>
 </head>
 <body>
+  <h1 id="token">Token : </h1>
+  <Button onclick="getToken()">Get Token</Button>
+
   <h1>Loading</h1>
   <Button onclick="showLoading()">Show Loading</Button>
+
+
+  <h1>Show Bottom Sheet</h1>
+  <Button onclick="showBottomSheet()">Show Bottom Sheet</Button>
 
   <script>
     var ANDROID = "ANDROID";
@@ -36,6 +43,28 @@
         }
       }, 1000)
     } 
+
+    function getToken() {
+      var newToken = window?.EclipseWebviewInterface?.getToken();
+
+      document.getElementById('token').innerHTML = `Token : ${newToken}`;
+    }
+
+    function showBottomSheet() {
+      if (deviceType === ANDROID) {
+        window?.EclipseWebviewInterface.showBottomSheet({
+          illustration: "https://cdn-dev2.linkaja.com/spr-webview/images/errors/failed-load.png",
+          title: "Voluptate eiusmod id eu occaecat elit exercitation non non deserunt pariatur eiusmod laborum occaecat et. Eu aliqua dolor mollit pariatur amet occaecat nisi deserunt id anim. Eu adipisicing dolore deserunt Lorem labore enim non irure. Eu nostrud veniam do dolore.",
+          desc: "Ex consequat laboris minim est aliquip. Et cupidatat laborum aliqua do laboris duis minim non sunt eiusmod tempor in. Labore est eiusmod anim laborum aliqua aute elit amet aliquip laborum mollit dolor sint commodo. Nulla proident nisi sit occaecat velit deserunt dolor qui officia culpa. Est adipisicing sit non sunt Lorem. Consequat aute dolor ullamco ut do sint quis irure ut aliquip et excepteur. Aliqua incididunt non esse proident dolor elit non est tempor laboris do Lorem duis nulla. Sit anim laborum consectetur ad dolor nisi deserunt ea nisi officia elit voluptate."
+        });
+      } else if (deviceType === IOS) {
+        window?.webkit?.messageHandlers?.showBottomSheet.postMessage({
+          illustration: "https://cdn-dev2.linkaja.com/spr-webview/images/errors/failed-load.png",
+          title: "Voluptate eiusmod id eu occaecat elit exercitation non non deserunt pariatur eiusmod laborum occaecat et. Eu aliqua dolor mollit pariatur amet occaecat nisi deserunt id anim. Eu adipisicing dolore deserunt Lorem labore enim non irure. Eu nostrud veniam do dolore.",,
+          desc: "Ex consequat laboris minim est aliquip. Et cupidatat laborum aliqua do laboris duis minim non sunt eiusmod tempor in. Labore est eiusmod anim laborum aliqua aute elit amet aliquip laborum mollit dolor sint commodo. Nulla proident nisi sit occaecat velit deserunt dolor qui officia culpa. Est adipisicing sit non sunt Lorem. Consequat aute dolor ullamco ut do sint quis irure ut aliquip et excepteur. Aliqua incididunt non esse proident dolor elit non est tempor laboris do Lorem duis nulla. Sit anim laborum consectetur ad dolor nisi deserunt ea nisi officia elit voluptate."
+        });
+      }
+    }
   </script>
 </body>
 </html>
