@@ -34,17 +34,18 @@
       <!-- End Google Tag Manager (noscript) -->
     <h1>Demo GTM...</h1>
 
-    <button class="trigger_click" onclick="triggerClick()">Trigger Click</button>
+    <button class="trigger_click" onclick="loginClick()">Login</button>
 
     <script type="text/javascript">
 
-      function triggerClick() {
-        console.log('ALAL === YOOO', {  });
+      function loginClick() {
+        console.log('ALAL === Login', {  });
 
         window.dataLayer.push({
           event: "click",
           eventProperties: {
-            name: 'btn_click'
+            detail: 'login click',
+            name: 'al ziqri'
           },
         });
       }
