@@ -33,13 +33,28 @@
     <!-- End Google Tag Manager (noscript) -->
     <h1>Demo GTM...</h1>
 
-    <script>
+    <button onclick="triggerClick()">Trigger Click</button>
+
+    <script type="text/javascript">
       window.dataLayer.push({
         event: "github_page",
         eventProperties: {
           repo: 'github'
         },
       });
+
+
+      function triggerClick() {
+        console.log('ALAL === YOOO', {  });
+
+        window.dataLayer.push({
+          event: "click",
+          eventProperties: {
+            name: 'btn_click'
+          },
+        });
+      }
     </script>
+
   </body>
 </html>
